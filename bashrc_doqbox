@@ -54,15 +54,15 @@ alias 9_go_mobile_config='vi www/scripts/biz9-mobile/scriptz/config.js';
 ### USER DIR END ###
 ### ANDROID SDK START ###
 export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_311/
-#export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_311/
 export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 export PATH=${PATH}:"/usr/lib/jvm/java-11-openjdk-amd64/bin"
-export ANDROID_SDK_ROOT=~/www/doqbox/toolz/android/command_line_tools_jan_2022/cmdline-tools/bin
-export ANDROID_HOME=~/www/doqbox/toolz/android/command_line_tools_jan_2022/cmdline-tools/bin
-export sdk_root=~/www/doqbox/toolz/android/command_line_tools_jan_2022/cmdline-tools/bin
-#export PATH=${PATH}:${ANDROID_SDK_ROOT}
+export ANDROID_SDK_ROOT=~/www/doqbox/toolz/android/cmdline-tools/bin
+export ANDROID_BUILD_TOOLS=~/www/doqbox/toolz/android/build-tools/android-13
+export ANDROID_PLATFORM=~/www/doqbox/toolz/android/platform/android-13
+export PATH=${PATH}:${ANDROID_SDK_ROOT}:${ANDROID_BUILD_TOOLS}:${ANDROID_BUILD_TOOLS}
+export sdk_root=${ANDROID_HOME}
 export GRADLE_HOME=/opt/gradle
 export PATH=${PATH}:${GRADLE_HOME}/bin
-export ORG_GRADLE_PROJECT_cdvMinSdkVersion=30
+export ORG_GRADLE_PROJECT_cdvMinSdkVersion=9
 ### ANDROID SDK END ###
 
